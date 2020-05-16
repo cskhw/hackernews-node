@@ -7,7 +7,7 @@ endpoint: ''
 
 #데이터 베이스 타입
 
-databaseType: relational, #document
+# databaseType: relational, #document
 
 #데이터 모델을 포함하고 있는 파일의 이름
 
