@@ -69,3 +69,8 @@ const resolvers = {
 }                                          
 ```
 
+# 프리즈마 클라이언트 라이브러리 설치
+
+```ini
+yarn add prisma-client-lib
+```
