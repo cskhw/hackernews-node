@@ -1,41 +1,11 @@
-# 사용 가능한 속성
-# datamodel, endpoint, secret, generate, databaseType
-# hooks, seed, custom
-# 사용할 Prisma API의 HTTP 엔드포인트
+# 사용할 Prisma API의 HTTP 엔드포인드
+#endpoint: ''endpoint: https://eu1.prisma.sh/gusdn0828-64073a/hackernews-node/dev
 
-endpoint: ''
 
-#데이터 베이스 타입
-
-# databaseType: relational, #document
-
-#데이터 모델을 포함하고 있는 파일의 이름
-
+# 데이터 모델을 포함하고 있는 파일의 이름
 datamodel: datamodel.prisma
-#datamodel: types.prisma
-#datamodel: enums.prisma
 
 # 생성될 Prisma Client의 언어와 생성 위치 지정
 generate:
-  - generate: javascript-client
-  # flow-client
-  # go-client
-  # graphql-schema  
-  output: ../src/generated/prisma-client
-    #output: ../prisma/datamodel
-    # - generate: typescript-client
-    
-# hooks:
-#   post-deploy:
-#     - echo "Deplpyment finished"
-#     - prisma generate
-# seed:
-#   import: database/backup.zip
-
-# 커스텀 변수
-
-# custom:
-#   language: typescript
-#   datamodel: myDatamodel
-# datamodel: ${self:custom.datamodel}.prisma
-
+  - generator: javascript-client
+    output: ../src/generated/prisma-client
